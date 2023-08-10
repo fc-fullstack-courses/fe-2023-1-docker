@@ -20,3 +20,6 @@ docker run -dit \
 -p 9876:5432 \
 -v ~/Documents/fc/2023/FE-2023-1/backups/postgres:/var/lib/postgresql/data \
 --name sql-db-15.3 postgres:alpine
+
+-- створення образу на осонваы докерфайлу
+docker build -t mock-server:0.0.1 -f Dockerfile-dev .
