@@ -1,0 +1,22 @@
+docker pull - завантажити образ
+docker images - список образів
+docker rmi - видалення образу
+
+docker run - створення та запуск контейнеру
+docker ps - список активних контейнерів
+docker ps -a - список всіх контейнерів
+
+docker attach - під'єднати термінал до контейнеру
+docker exec - виконати команду у терміналі
+
+docker start - запустити існуючий контейнер
+docker stop - зупинити існуючий контейнер
+
+-- приклад створення контейнеру постгресу
+docker run -dit \
+-e POSTGRES_PASSWORD=postgres \
+-e POSTGRES_USER=test \
+-e POSTGRES_DB=docker_db \
+-p 9876:5432 \
+-v ~/Documents/fc/2023/FE-2023-1/backups/postgres:/var/lib/postgresql/data \
+--name sql-db-15.3 postgres:alpine
