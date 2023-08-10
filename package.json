@@ -1,0 +1,24 @@
+{
+  "name": "fe-2023-1-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fc-fullstack-courses/fe-2023-1-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fc-fullstack-courses/fe-2023-1-docker/issues"
+  },
+  "homepage": "https://github.com/fc-fullstack-courses/fe-2023-1-docker#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1"
+  }
+}
